@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f8f7f4;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: #e8e4dc;
+}
+
+.hero h1 {
+    font-size: 72px;
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.about {
+    text-align: center;
+}
+
+.about p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.artwork {
+    aspect-ratio: 1 / 1;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+.works {
+    background: white;
+}
+
+.shop {
+    text-align: center;
+}
+
+.shop p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #222;
+    text-decoration: none;
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
