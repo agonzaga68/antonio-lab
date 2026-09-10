@@ -60,6 +60,26 @@ const artworkData = [
     }
 ];
 
+
+function createArtworkDetails(data) {
+    const details = [];
+
+    if (data.technique) {
+        details.push("Técnica: " + data.technique);
+    }
+
+    if (data.materials) {
+        details.push("Materiais: " + data.materials);
+    }
+
+    if (data.year) {
+        details.push("Ano: " + data.year);
+    }
+
+    return details.join(" · ");
+}
+
+
 function showArtwork(index) {
     const artwork = artworks[index];
     const image = artwork.querySelector("img");
@@ -75,10 +95,7 @@ function showArtwork(index) {
     lightboxStory.textContent =
         data.description || "Descrição da obra a preencher.";
 
-    lightboxDetails.textContent =
-        `${data.technique ? "Técnica: " + data.technique : ""}
-        ${data.materials ? " · Materiais: " + data.materials : ""}
-        ${data.year ? " · Ano: " + data.year : ""}`;
+   lightboxDetails.textContent = createArtworkDetails(data);
 
     lightbox.style.display = "flex";
     document.body.style.overflow = "hidden";
