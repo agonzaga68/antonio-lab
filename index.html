@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gala Glez— Artista Plástica</title>
+    <title>Gala Glez — Artista Plástica</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +17,13 @@
         <div class="logo">GALA GLEZ</div>
 
         <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#galeria">Galeria</a>
-            <a href="#obras">Obras</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#loja">Loja</a>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#obras">Obras</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -35,13 +37,12 @@
                 <h1>GALA GLEZ</h1>
 
                 <p>Artista Plástica · Desenho · Pintura</p>
-
             </div>
 
         </section>
 
 
-        <section id="sobre">
+        <section id="sobre" class="about">
 
             <h2>Sobre Gala Glez</h2>
 
@@ -71,35 +72,63 @@
         </section>
 
 
-        <section id="galeria">
+        <section id="galeria" class="works">
 
             <h2>Galeria</h2>
 
             <div class="gallery">
 
-    <figure class="artwork">
-        <img src="images/obra-01.jpg" alt="Obra de Gala Glez">
-        <figcaption>Obra 1</figcaption>
-    </figure>
+                <figure class="artwork">
+                    <img src="images/obra-01.webp" alt="Obra de Gala Glez">
+                </figure>
 
-    <figure class="artwork">
-        <img src="images/obra-02.jpg" alt="Obra de Gala Glez">
-        <figcaption>Obra 2</figcaption>
-    </figure>
+                <figure class="artwork">
+                    <img src="images/obra-02.webp" alt="Obra de Gala Glez">
+                </figure>
 
-    <figure class="artwork">
-        <img src="images/obra-03.jpg" alt="Obra de Gala Glez">
-        <figcaption>Obra 3</figcaption>
-    </figure>
+                <figure class="artwork">
+                    <img src="images/obra-03.webp" alt="Obra de Gala Glez">
+                </figure>
 
-</div>
+                <figure class="artwork">
+                    <img src="images/obra-04.webp" alt="Obra de Gala Glez">
+                </figure>
+
+                <figure class="artwork">
+                    <img src="images/obra-05.webp" alt="Obra de Gala Glez">
+                </figure>
 
             </div>
 
         </section>
 
+                <div id="lightbox" class="lightbox">
 
-        <section id="obras">
+    <div class="lightbox-content">
+
+        <button id="lightbox-close" class="lightbox-close" aria-label="Fechar">
+            ×
+        </button>
+
+        <div class="lightbox-image-container">
+            <img id="lightbox-image" src="" alt="">
+        </div>
+
+        <div class="lightbox-info">
+
+            <h2 id="lightbox-title"></h2>
+
+            <p id="lightbox-story"></p>
+
+            <p id="lightbox-details"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <section id="obras" class="about">
 
             <h2>Obras</h2>
 
@@ -111,7 +140,7 @@
         </section>
 
 
-        <section id="loja">
+        <section id="loja" class="shop">
 
             <h2>Loja</h2>
 
@@ -124,7 +153,7 @@
         </section>
 
 
-        <section id="contacto">
+        <section id="contacto" class="contact">
 
             <h2>Contacto</h2>
 
@@ -140,9 +169,11 @@
 
     <footer>
 
-        © 2026 Gala Glez— Artista Plástica
+        © 2026 Gala Glez — Artista Plástica
 
     </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
