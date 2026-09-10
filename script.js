@@ -5,41 +5,58 @@ const lightboxImage = document.querySelector("#lightbox-image");
 const lightboxTitle = document.querySelector("#lightbox-title");
 const lightboxStory = document.querySelector("#lightbox-story");
 const lightboxDetails = document.querySelector("#lightbox-details");
-const closeButton = document.querySelector("#lightbox-close");
 
+const closeButton = document.querySelector("#lightbox-close");
 const previousButton = document.querySelector("#lightbox-prev");
 const nextButton = document.querySelector("#lightbox-next");
-
-previousButton.addEventListener("click", showPreviousArtwork);
-nextButton.addEventListener("click", showNextArtwork);
 
 let currentIndex = 0;
 
 const artworkData = [
     {
         title: "Obra 1",
-        story: "História e significado da obra a preencher.",
-        details: "Técnica, materiais e data a preencher."
+        year: "",
+        technique: "",
+        materials: "",
+        category: "",
+        description: "",
+        story: ""
     },
     {
         title: "Obra 2",
-        story: "História e significado da obra a preencher.",
-        details: "Técnica, materiais e data a preencher."
+        year: "",
+        technique: "",
+        materials: "",
+        category: "",
+        description: "",
+        story: ""
     },
     {
         title: "Obra 3",
-        story: "História e significado da obra a preencher.",
-        details: "Técnica, materiais e data a preencher."
+        year: "",
+        technique: "",
+        materials: "",
+        category: "",
+        description: "",
+        story: ""
     },
     {
         title: "Obra 4",
-        story: "História e significado da obra a preencher.",
-        details: "Técnica, materiais e data a preencher."
+        year: "",
+        technique: "",
+        materials: "",
+        category: "",
+        description: "",
+        story: ""
     },
     {
         title: "Obra 5",
-        story: "História e significado da obra a preencher.",
-        details: "Técnica, materiais e data a preencher."
+        year: "",
+        technique: "",
+        materials: "",
+        category: "",
+        description: "",
+        story: ""
     }
 ];
 
@@ -54,8 +71,14 @@ function showArtwork(index) {
     lightboxImage.alt = image.alt;
 
     lightboxTitle.textContent = data.title;
-    lightboxStory.textContent = data.story;
-    lightboxDetails.textContent = data.details;
+
+    lightboxStory.textContent =
+        data.description || "Descrição da obra a preencher.";
+
+    lightboxDetails.textContent =
+        `${data.technique ? "Técnica: " + data.technique : ""}
+        ${data.materials ? " · Materiais: " + data.materials : ""}
+        ${data.year ? " · Ano: " + data.year : ""}`;
 
     lightbox.style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -87,6 +110,10 @@ artworks.forEach(function (artwork, index) {
 });
 
 closeButton.addEventListener("click", closeLightbox);
+
+previousButton.addEventListener("click", showPreviousArtwork);
+
+nextButton.addEventListener("click", showNextArtwork);
 
 lightbox.addEventListener("click", function (event) {
     if (event.target === lightbox) {
