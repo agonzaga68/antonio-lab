@@ -1,5 +1,7 @@
 const artworks = document.querySelectorAll(".artwork");
 
+const filterButtons = document.querySelectorAll(".filters button");
+
 const lightbox = document.querySelector("#lightbox");
 const lightboxImage = document.querySelector("#lightbox-image");
 const lightboxTitle = document.querySelector("#lightbox-title");
@@ -14,49 +16,49 @@ let currentIndex = 0;
 
 const artworkData = [
     {
-        title: "Obra 1",
-        year: "",
-        technique: "",
-        materials: "",
-        category: "",
-        description: "",
-        story: ""
+        title: "Carmen",
+        year: "2026",
+        technique: "Técnica mista",
+        materials: "Pastel e lápis Faber-Castell",
+        category: "Retrato",
+        description: "Estudo de retrato realizado para desenvolver e aperfeiçoar técnicas de desenho e pintura.",
+        story: "A rapariga modelo"
     },
     {
-        title: "Obra 2",
-        year: "",
-        technique: "",
-        materials: "",
-        category: "",
-        description: "",
-        story: ""
+        title: "Akari",
+        year: "2026",
+        technique: "Técnica mista",
+        materials: "Pastel e lápis Faber-Castell sobre papel Fabriano 1264, 300 g",
+        category: "Desenho",
+        description: "Estudo realizado para desenvolver e aperfeiçoar conhecimentos e técnicas de desenho e pintura.",
+        story: "Passeio de domingo"
     },
     {
-        title: "Obra 3",
-        year: "",
-        technique: "",
-        materials: "",
-        category: "",
-        description: "",
-        story: ""
+        title: "Estudo de Max — Stranger Things",
+        year: "2026",
+        technique: "Técnica mista",
+        materials: "Desenho a cores sobre papel Fabriano 1264, 300 g",
+        category: "Retrato",
+        description: "Estudo de desenho a partir da personagem Max, de Stranger Things, realizado no contexto de uma aula com Alícia Mesas.",
+        story: "Personagem da serie televisiva"
     },
     {
-        title: "Obra 4",
-        year: "",
-        technique: "",
-        materials: "",
-        category: "",
-        description: "",
-        story: ""
+        title: "Lobo",
+        year: "2026",
+        technique: "Pastel seco e lápis de carvão",
+        materials: "Pastel seco e lápis Faber-Castell sobre papel Fabriano 1264, 300 g",
+        category: "Retrato",
+        description: "Estudo de retrato realizado para desenvolver e aperfeiçoar técnicas de desenho e pintura.",
+        story: "Um lobo"
     },
     {
-        title: "Obra 5",
-        year: "",
-        technique: "",
-        materials: "",
-        category: "",
-        description: "",
-        story: ""
+        title: "Sombras",
+        year: "2026",
+        technique: "Carvão",
+        materials: "Carvão sobre papel Fabriano 1264, 300 g",
+        category: "Desenho",
+        description: "Estudo dedicado à exploração das sombras e ao aperfeiçoamento da técnica do carvão.",
+        story: "Petter e Gala"
     }
 ];
 
@@ -79,6 +81,18 @@ function createArtworkDetails(data) {
     return details.join(" · ");
 }
 
+function filterArtworks(category) {
+    artworks.forEach(function (artwork, index) {
+        const artworkCategory = artworkData[index].category;
+
+        if (category === "all" || artworkCategory === category) {
+            artwork.style.display = "";
+        } else {
+            artwork.style.display = "none";
+        }
+    });
+}
+
 
 function showArtwork(index) {
     const artwork = artworks[index];
@@ -92,10 +106,14 @@ function showArtwork(index) {
 
     lightboxTitle.textContent = data.title;
 
-    lightboxStory.textContent =
-        data.description || "Descrição da obra a preencher.";
+   lightboxStory.innerHTML =
+    "<strong>Descrição</strong><br>" +
+    data.description +
+    "<br><br>" +
+    "<strong>História</strong><br>" +
+    data.story;
 
-   lightboxDetails.textContent = createArtworkDetails(data);
+lightboxDetails.textContent = createArtworkDetails(data);
 
     lightbox.style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -154,4 +172,17 @@ document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowRight") {
         showNextArtwork();
     }
+});
+
+filterButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+
+        filterButtons.forEach(function (button) {
+            button.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        filterArtworks(button.dataset.category);
+    });
 });

@@ -96,6 +96,35 @@ section h2 {
     color: #555;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.filters button {
+    background: transparent;
+    border: 1px solid #222;
+    padding: 10px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filters button:hover {
+    background: #222;
+    color: white;
+}
+
+.filters button.active {
+    background: #222;
+    color: white;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
