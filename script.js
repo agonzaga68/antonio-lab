@@ -14,6 +14,12 @@ const nextButton = document.querySelector("#lightbox-next");
 
 let currentIndex = 0;
 
+let visibleArtworks = [];
+
+artworks.forEach(function (artwork, index) {
+    visibleArtworks.push(index);
+});
+
 const artworkData = [
     {
         title: "Carmen",
@@ -82,24 +88,33 @@ function createArtworkDetails(data) {
 }
 
 function filterArtworks(category) {
+
+    visibleArtworks = [];
+
     artworks.forEach(function (artwork, index) {
+
         const artworkCategory = artworkData[index].category;
 
         if (category === "all" || artworkCategory === category) {
+
             artwork.style.display = "";
+            visibleArtworks.push(index);
+
         } else {
+
             artwork.style.display = "none";
         }
     });
 }
 
-
 function showArtwork(index) {
-    const artwork = artworks[index];
-    const image = artwork.querySelector("img");
-    const data = artworkData[index];
 
-    currentIndex = index;
+const artworkIndex = visibleArtworks[index];
+const artwork = artworks[artworkIndex];
+const image = artwork.querySelector("img");
+const data = artworkData[artworkIndex];
+
+currentIndex = index;
 
     lightboxImage.src = image.src;
     lightboxImage.alt = image.alt;
@@ -125,22 +140,27 @@ function closeLightbox() {
 }
 
 function showPreviousArtwork() {
+
     const previousIndex =
-        (currentIndex - 1 + artworks.length) % artworks.length;
+        (currentIndex - 1 + visibleArtworks.length) % visibleArtworks.length;
 
     showArtwork(previousIndex);
 }
 
 function showNextArtwork() {
+
     const nextIndex =
-        (currentIndex + 1) % artworks.length;
+        (currentIndex + 1) % visibleArtworks.length;
 
     showArtwork(nextIndex);
 }
 
 artworks.forEach(function (artwork, index) {
     artwork.addEventListener("click", function () {
-        showArtwork(index);
+
+        const visibleIndex = visibleArtworks.indexOf(index);
+
+        showArtwork(visibleIndex);
     });
 });
 
