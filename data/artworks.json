@@ -53,5 +53,281 @@
     "description": "Estudo dedicado à exploração das sombras e ao aperfeiçoamento da técnica do carvão.",
     "story": "Petter e Gala",
     "image": "processed/obra-05.webp"
+  },
+  {
+    "id": "obra-06",
+    "title": "Companheiro",
+    "category": "Retrato",
+    "image": "processed/obra-06.webp"
+  },
+  {
+    "id": "obra-07",
+    "title": "Bosque Azul",
+    "category": "Paisagem",
+    "image": "processed/obra-07.webp"
+  },
+  {
+    "id": "obra-08",
+    "title": "Reflexos da Floresta",
+    "category": "Natureza",
+    "image": "processed/obra-08.webp"
+  },
+  {
+    "id": "obra-09",
+    "title": "Cavalo ao Vento",
+    "category": "Natureza",
+    "image": "processed/obra-09.webp"
+  },
+  {
+    "id": "obra-10",
+    "title": "Flores de Luz",
+    "category": "Natureza",
+    "image": "processed/obra-10.webp"
+  },
+  {
+    "id": "obra-11",
+    "title": "Arlequim",
+    "category": "Retrato",
+    "image": "processed/obra-11.webp"
+  },
+  {
+    "id": "obra-12",
+    "title": "Equilíbrio",
+    "category": "Pintura",
+    "image": "processed/obra-12.webp"
+  },
+  {
+    "id": "obra-13",
+    "title": "Forma Orgânica",
+    "category": "Natureza",
+    "image": "processed/obra-13.webp"
+  },
+  {
+    "id": "obra-14",
+    "title": "A Coruja",
+    "category": "Natureza",
+    "image": "processed/obra-14.webp"
+  },
+  {
+    "id": "obra-15",
+    "title": "A Abelha",
+    "category": "Natureza",
+    "image": "processed/obra-15.webp"
+  },
+  {
+    "id": "obra-16",
+    "title": "Peixes em Movimento",
+    "category": "Natureza",
+    "image": "processed/obra-16.webp"
+  },
+  {
+    "id": "obra-17",
+    "title": "Vasos em Silêncio",
+    "category": "Pintura",
+    "image": "processed/obra-17.webp"
+  },
+  {
+    "id": "obra-18",
+    "title": "Caminho entre Árvores",
+    "category": "Paisagem",
+    "image": "processed/obra-18.webp"
+  },
+  {
+    "id": "obra-19",
+    "title": "Vasos e Taça",
+    "category": "Pintura",
+    "image": "processed/obra-19.webp"
+  },
+  {
+    "id": "obra-20",
+    "title": "Folhas de Outono",
+    "category": "Natureza",
+    "image": "processed/obra-20.webp"
+  },
+  {
+    "id": "obra-21",
+    "title": "Ave do Paraíso",
+    "category": "Natureza",
+    "image": "processed/obra-21.webp"
+  },
+  {
+    "id": "obra-22",
+    "title": "Esfera e Cubos",
+    "category": "Pintura",
+    "image": "processed/obra-22.webp"
+  },
+  {
+    "id": "obra-23",
+    "title": "Maçã Vermelha",
+    "category": "Natureza",
+    "image": "processed/obra-23.webp"
+  },
+  {
+    "id": "obra-24",
+    "title": "Olhar Felino",
+    "category": "Retrato",
+    "image": "processed/obra-24.webp"
+  },
+  {
+    "id": "obra-25",
+    "title": "Esfera em Equilíbrio",
+    "category": "Pintura",
+    "image": "processed/obra-25.webp"
+  },
+  {
+    "id": "obra-26",
+    "title": "Leopardo em Movimento",
+    "category": "Natureza",
+    "image": "processed/obra-26.webp"
+  },
+  {
+    "id": "obra-27",
+    "title": "Esfera de Flores",
+    "category": "Natureza",
+    "image": "processed/obra-27.webp"
+  },
+  {
+    "id": "obra-28",
+    "title": "Retrato de um Cão",
+    "category": "Retrato",
+    "image": "processed/obra-28.webp"
+  },
+  {
+    "id": "obra-29",
+    "title": "Urso Polar",
+    "category": "Natureza",
+    "image": "processed/obra-29.webp"
+  },
+  {
+    "id": "obra-30",
+    "title": "Rã entre Vegetação",
+    "category": "Natureza",
+    "image": "processed/obra-30.webp"
+  },
+  {
+    "id": "obra-31",
+    "title": "Folhagem",
+    "category": "Natureza",
+    "image": "processed/obra-31.webp"
+  },
+  {
+    "id": "obra-32",
+    "title": "Duas Cerejas",
+    "category": "Natureza",
+    "image": "processed/obra-32.webp"
+  },
+  {
+    "id": "obra-33",
+    "title": "Flores Tropicais",
+    "category": "Natureza",
+    "image": "processed/obra-33.webp"
+  },
+  {
+    "id": "obra-34",
+    "title": "O Navio",
+    "category": "Paisagem",
+    "image": "processed/obra-34.webp"
+  },
+  {
+    "id": "obra-35",
+    "title": "O Pincel",
+    "category": "Pintura",
+    "image": "processed/obra-35.webp"
+  },
+  {
+    "id": "obra-36",
+    "title": "Rosto Egípcio",
+    "category": "Retrato",
+    "image": "processed/obra-36.webp"
+  },
+  {
+    "id": "obra-37",
+    "title": "A Grande Coruja",
+    "category": "Natureza",
+    "image": "processed/obra-37.webp"
+  },
+  {
+    "id": "obra-38",
+    "title": "Retrato Masculino",
+    "category": "Retrato",
+    "image": "processed/obra-38.webp"
+  },
+  {
+    "id": "obra-39",
+    "title": "Camaleão",
+    "category": "Natureza",
+    "image": "processed/obra-39.webp"
+  },
+  {
+    "id": "obra-40",
+    "title": "Silêncio na Floresta",
+    "category": "Paisagem",
+    "image": "processed/obra-40.webp"
+  },
+  {
+    "id": "obra-41",
+    "title": "Mar ao Entardecer",
+    "category": "Paisagem",
+    "image": "processed/obra-41.webp"
+  },
+  {
+    "id": "obra-42",
+    "title": "Vaso e Esfera",
+    "category": "Pintura",
+    "image": "processed/obra-42.webp"
+  },
+  {
+    "id": "obra-43",
+    "title": "Gato",
+    "category": "Natureza",
+    "image": "processed/obra-43.webp"
+  },
+  {
+    "id": "obra-44",
+    "title": "Aldeia junto à Água",
+    "category": "Paisagem",
+    "image": "processed/obra-44.webp"
+  },
+  {
+    "id": "obra-45",
+    "title": "Ave do Paraíso II",
+    "category": "Natureza",
+    "image": "processed/obra-45.webp"
+  },
+  {
+    "id": "obra-46",
+    "title": "Memória de uma Paisagem",
+    "category": "Paisagem",
+    "image": "processed/obra-46.webp"
+  },
+  {
+    "id": "obra-47",
+    "title": "Retrato Egípcio II",
+    "category": "Retrato",
+    "image": "processed/obra-47.webp"
+  },
+  {
+    "id": "obra-48",
+    "title": "Mar Aberto",
+    "category": "Paisagem",
+    "image": "processed/obra-48.webp"
+  },
+  {
+    "id": "obra-49",
+    "title": "Retrato Feminino",
+    "category": "Retrato",
+    "image": "processed/obra-49.webp"
+  },
+  {
+    "id": "obra-50",
+    "title": "Cadeado",
+    "category": "Pintura",
+    "image": "processed/obra-50.webp"
+  },
+  {
+    "id": "obra-52",
+    "title": "Jardim Tropical",
+    "category": "Natureza",
+    "image": "processed/obra-52.webp"
   }
 ]
