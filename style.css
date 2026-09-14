@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
     line-height: 1.6;
     color: #222;
     background: #f8f7f4;
@@ -31,14 +32,8 @@ nav a {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
     font-size: 15px;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
@@ -46,7 +41,7 @@ nav a:hover {
 }
 
 .hero {
-    min-height: 78vh;
+    min-height: 82vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,16 +51,17 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 82px;
+    font-size: 96px;
     font-weight: 400;
     letter-spacing: 14px;
     margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 19px;
+    font-size: 17px;
     color: #555;
     letter-spacing: 2px;
+    font-weight: 500;
 }
 
 section {
@@ -75,10 +71,10 @@ section {
 }
 
 section h2 {
-    font-size: 38px;
+    font-size: 42px;
     margin-bottom: 30px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .about {
@@ -94,6 +90,7 @@ section h2 {
     margin: 0 auto 20px;
     font-size: 18px;
     color: #555;
+    text-align: justify;
 }
 
 .filters {
@@ -128,14 +125,10 @@ section h2 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 28px;
 }
 
-.artwork {
-    margin: 0;
-    background: white;
-    overflow: hidden;
-}
+
 
 .artwork img {
     display: block;
@@ -149,10 +142,13 @@ section h2 {
 }
 
 .artwork {
-    background: #ddd;
+    margin: 0;
+    background: white;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #777;
 }
 
