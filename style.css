@@ -305,3 +305,16 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.artwork figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #777;
+}
+
+.artwork figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #777;
+}
